@@ -1,3 +1,9 @@
 body {
   background: transparent;
+  
+}
+#logo {
+  background-color: aqua ;
+  box-align:left;
+  padding: 10px;
 }
