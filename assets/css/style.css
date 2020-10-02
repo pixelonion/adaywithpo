@@ -62,6 +62,16 @@ padding:10px 100px 10px 0px;
   background-color: lightblue;
 }
 
+.leftcolumn {
+  float: left;
+  width: 50%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 50%;
+}
+
 /* footer */
 .leftfooter {
   left: 0px;
