@@ -40,6 +40,14 @@ padding:10px 100px 10px 0px;
   border-bottom: 1px solid gray;
 }
 
+/* Banner */
+.banner{
+  display: grid;
+  padding-left: auto ;
+  grid-template-columns: 50% 50%
+}
+
+/* footer */
 .footerlogo {
   position: relative;
   display: inline-block;
