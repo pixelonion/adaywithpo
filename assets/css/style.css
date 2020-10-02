@@ -80,7 +80,7 @@ padding:10px 100px 10px 0px;
 .leftcolumn {
   float: left;
   width: 50%;
-  padding-left: 25%;
+  padding-left: 50%;
   position: relative;
 }
 
@@ -115,6 +115,8 @@ padding:10px 100px 10px 0px;
 .footerlogo .footerlogohover {
   position: absolute;
   display: none;
+  top: 0;
+  left: 0;
 }
 
 .footerlogo:hover .footerlogohover {
