@@ -53,7 +53,7 @@ body{
   max-width: 500px;
   min-width: 300px;
   background-color: white;
-  text-align: left; 
+  text-align: left;
   border-collapse: collapse;
 }
 
@@ -160,6 +160,7 @@ td:nth-child(3){
 /*footer bg color */
 .footer{
     background-color: white;
+    padding-top:20px;
 }
 
 /*align social community information to the left*/
@@ -178,7 +179,7 @@ a:link{
 
 /*spacing for copyright statement */
 .copyright{
-  margin:10px 0px;
+  margin:30px 0px 10px 0px;
   font-size: 10px;
   text-align: center;
 }
