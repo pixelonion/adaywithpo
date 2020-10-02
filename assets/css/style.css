@@ -14,13 +14,23 @@ body {
   margin-right: auto;
 }
 
+
+/* table */
 .baby-name-table {
   text-align:left;
   margin-left: auto;
   margin-right: auto;
+  border-collapse: collapse;
 }
 
-.baby-name-table th {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+.baby-name-table tr th,tr td{
+  padding-right: 100px;
+}
+.baby-name-table tr th {
+border-top: 4px solid gray;
+border-bottom: 1px solid black;
+padding:10px 100px 10px 0px;
+}
+.baby-name-table tr td{
+  border-bottom: 1px solid gray;
 }
