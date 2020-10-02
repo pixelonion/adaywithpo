@@ -4,7 +4,7 @@
 }
 
 body{
-  background-color: gray;
+  background-color: lightgray;
 }
 
 /* align all content to center */
@@ -53,7 +53,7 @@ body{
   max-width: 500px;
   min-width: 300px;
   background-color: white;
-  text-align: left;
+  text-align: left; 
   border-collapse: collapse;
 }
 
@@ -72,14 +72,17 @@ td{
   padding:5px;
 }
 
+/*set width of TD for name column to be 50% */
 td:first-child{
   width:calc(100%/8 * 4);
 }
 
+/*set width of TD for gender column to be 25%*/
 td:nth-child(2){
   width:calc(100%/8 * 2);
 }
 
+/*set width of TD for ID column to be 25%*/
 td:nth-child(3){
   width:calc(100%/8 * 2);
 }
