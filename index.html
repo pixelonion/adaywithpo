@@ -2,17 +2,70 @@
 <html>
 <head>
   <title>A day with Pixel Onion</title>
+
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div>Pixel Onion logo</div>
-    <div>Site logo</div>
+    <div>
+      <img id="POlogo" src="assets/images/pixel-onion-logo.png">
+    </div>
+    <div id="sitelogo-div">
+      <img id="sitelogo" src="assets/images/baby-name-finder-logo.png">
+    </div>
+    <img id="cloud" src="assets/images/cloud-banner.png">
   </header>
+
   <section>
-    Main content
+    <div>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>ID</th>
+        </tr>
+        <tr>
+          <td>Abel</td>
+          <td>Boy</td>
+          <td>6941</td>
+        </tr>
+        <tr>
+          <td>Adira</td>
+          <td>Girl</td>
+          <td>2904</td>
+        </tr>
+      </table>
+    </div>
   </section>
+
+  <div id="banner">
+    <div id="bannercontent">
+        <img id="baby" src="assets/images/banner-baby.jpg">
+        <p>Searching for the perfect name for your baby? Whether you want something traditional or unusual. We can help you!</p>
+    </div>
+  </div>
+
   <footer>
-    Footer
+    <div class="row">
+      <div class="col">
+        <p>
+          You can find us at:<br><br>
+          991C Alexandra Road, #01-138, Singapore 119971<br>
+          or you can email us at hello@pixelonion.com
+        </p>
+      </div>
+
+      <div class="col">
+        <p>Join our social community<p>
+        <a href="#"><img onmouseover="active(this)" onmouseout="inactive(this)" src="assets/images/ic-facebook-inactive-24.png"></a>
+        <a href="#"><img onmouseover="active(this)" onmouseout="inactive(this)" src="assets/images/ic-linkedin-inactive-24.png"></a>
+        <a href="#"><img onmouseover="active(this)" onmouseout="inactive(this)" src="assets/images/ic-twitter-inactive-24.png"></a>
+      </div>
+    </div>
+
+    <p>© 2017 Pixel Onion Ptd Ltd. All Rights Reserved</p>
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,133 @@
 body {
   background: transparent;
+  margin: 0;
+  width: 100%;
+}
+
+@font-face {
+    font-family: sassoon;
+    src: url("../fonts/sassoon-primary-std-592ff03941b89.otf") format("opentype");
+}
+
+@font-face {
+    font-family: sassoon-bold;
+    font-weight: bold;
+    src: url("../fonts/sassoon-primary-std-bold-592ff06b66131.otf") format("opentype");
+}
+
+p{
+  font-family: sassoon;
+}
+
+/* ########################################################################## */
+
+header{
+  background-color: lightblue;
+}
+
+#POlogo{
+  width: 15%;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+#sitelogo-div{
+  text-align: center;
+}
+
+#sitelogo{
+  width: 25%;
+}
+
+#cloud{
+  width: 100%;
+  height: auto;
+}
+
+/* ########################################################################## */
+
+section{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td{
+  padding: 4px;
+}
+
+th:first-child, td:first-child{
+  margin-left: 16px;
+}
+
+th:first-child{
+  width: 50%;
+}
+
+tr:first-child{
+  border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
+}
+
+/* ########################################################################## */
+
+#banner{
+  background-color: lightblue;
+  width: 100%; !important;
+}
+
+#bannercontent{
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  max-height: 150px;
+}
+
+#baby{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#bannercontent img{
+  width: 30%;
+}
+#bannercontent p{
+  width: 70%;
+  margin-left: 16px;
+  color: white;
+  font-family: sassoon-bold;
+  font-size: 1.5vw;
+}
+
+/* ########################################################################## */
+
+footer{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.col a:not(:first-child){
+  margin-left: 16px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col{
+  float: left;
+  width: 50%;
+}
+
+footer > p{
+  width: 100%;
+  text-align: center;
 }
