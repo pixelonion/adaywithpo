@@ -15,6 +15,12 @@ body {
   display: block;
 }
 
+.cloud-banner {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 
 /* table */
 .baby-name-table {
