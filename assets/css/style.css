@@ -1,9 +1,26 @@
 body {
   background: transparent;
+  align-content: center;
   
 }
-#logo {
+#pixel-logo {
   background-color: aqua ;
   box-align:left;
   padding: 10px;
+}
+
+#baby-logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.baby-name-table {
+  text-align:left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.baby-name-table th {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
