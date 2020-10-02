@@ -1,6 +1,21 @@
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/sassoon-primary-std-592ff03941b89.otf);
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/sassoon-primary-std-bold-592ff06b66131.otf);
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
+  font-family: myFirstFont;
 }
+
+
 
 body {
   background: transparent;
