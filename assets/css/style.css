@@ -1,3 +1,186 @@
-body {
-  background: transparent;
+*{
+  padding:0px;
+  margin:0px;
 }
+
+body{
+  background-color: lightgray;
+}
+
+/* align all content to center */
+.body {
+
+  margin: 0px 2% 2% 2%;
+  text-align: center;
+}
+
+.babyiconpos{
+    background-color: #6495ED;
+}
+
+/*pixel onion logo*/
+.logoiconpos{
+  text-align: left;
+  padding-left:5%; /*responsive positioning*/
+  padding-top:5%;
+  background-color: #6495ED;
+}
+
+.babyicon{
+  height:auto;
+  width:100%;
+  max-width: 300px;
+  min-width:100px;
+}
+
+/*White background for table*/
+.whitebg{
+  background-color: white;
+  text-align: center;
+  padding-bottom:15px;
+}
+
+.cloudimg{
+  width:100%;
+  background-color: #6495ED;
+  vertical-align: bottom; /*By default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on.*/
+}
+
+/*Align table to center of page*/
+/* table is a block level element, not affect by text-align center of body element*/
+.datatable{
+  margin:0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+tr{
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+
+}
+
+.boldtr{
+  border-top:3px solid black;
+  border-bottom:3px solid black;
+}
+
+td{
+  padding:5px;
+}
+
+/*set width of TD for name column to be 50% */
+td:first-child{
+  width:calc(100%/8 * 4);
+}
+
+/*set width of TD for gender column to be 25%*/
+td:nth-child(2){
+  width:calc(100%/8 * 2);
+}
+
+/*set width of TD for ID column to be 25%*/
+td:nth-child(3){
+  width:calc(100%/8 * 2);
+}
+
+
+/*banner bg color*/
+/*text-align center doesnt align elements of display type block */
+.banner{
+  background-color: #6495ED;
+  text-align: center
+}
+
+/* Container for banner content, centralize to center of page */
+/*text-align center doesnt align elements of display type block */
+.bannercontent{
+  display:inline-block;
+  padding:20px 0px;
+  max-width:500px;
+}
+
+.bannerText{
+  color:white;
+  font-weight:bold;
+  text-align: left;
+}
+
+/*banner image setting*/
+.floatLeft{
+  float:left;
+}
+
+
+/*By default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on.*/
+.bannerBabyIcon{
+  height:100px;
+  vertical-align: bottom;
+  margin-right:15px;
+}
+
+
+.fixBannerContentHeight{
+  line-height: 2.0;
+}
+
+/*clear floats*/
+.clear{
+  clear:both;
+}
+
+.footer{
+  text-align: center;
+}
+
+/*center the footer content*/
+.footercontent{
+  max-width:500px;
+  display:inline-block;
+  text-align: left;
+}
+
+/*width of each footer content */
+/* 15 * 2 = 30px which is the margin-right used on <p>you can find us at information</p> */
+.footerWidth{
+  width:calc(50% - 15px);
+}
+
+.adjustRight{
+  margin-right:30px;
+}
+
+.reduceFontSize{
+  font-size: 10px;
+}
+
+/*footer bg color */
+.footer{
+    background-color: white;
+    padding-top:20px;
+}
+
+/*align social community information to the left*/
+.alignLeft{
+  text-align: left;
+}
+
+.spaceRight{
+  margin-right: 20px;
+}
+
+/*purple link for unclicked links */
+a:link{
+  color:purple;
+}
+
+/*spacing for copyright statement */
+.copyright{
+  margin:30px 0px 10px 0px;
+  font-size: 10px;
+  text-align: center;
+}
+/*margin is currently taking color of the parent element*/
