@@ -80,7 +80,7 @@ padding:10px 100px 10px 0px;
 .leftcolumn {
   float: left;
   width: 50%;
-  right: 0px;
+  padding-left: 25%;
   position: relative;
 }
 
