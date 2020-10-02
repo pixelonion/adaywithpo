@@ -103,6 +103,10 @@ padding:10px 100px 10px 0px;
   position: absolute;
 }
 
+.bottomfooter {
+  align-items: center;
+}
+
 .footerlogo {
   position: relative;
   display: inline-block;
