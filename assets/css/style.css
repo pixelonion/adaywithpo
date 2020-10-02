@@ -1,3 +1,126 @@
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/sassoon-primary-std-592ff03941b89.otf);
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/sassoon-primary-std-bold-592ff06b66131.otf);
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: myFirstFont;
+}
+
+
+
 body {
   background: transparent;
+  align-content: center;
+  
+}
+
+header
+{
+  background: lightblue;
+}
+#pixel-logo {
+  box-align:left;
+  padding: 10px;
+}
+
+.baby-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.cloud-banner {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+/* table */
+.baby-name-table {
+  text-align:left;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+.baby-name-table th {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.baby-name-table tr th,tr td{
+  padding-right: 100px;
+}
+.baby-name-table tr th {
+border-top: 4px solid gray;
+border-bottom: 1px solid black;
+padding:10px 100px 10px 0px;
+}
+.baby-name-table tr td{
+  border-bottom: 1px solid gray;
+}
+
+/* Banner */
+.banner{
+  display: grid;
+  padding-left: auto ;
+  grid-template-columns: 50% 50%;
+  background-color: lightblue;
+}
+
+.leftcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 50%;
+  position: relative;
+}
+
+.rightcolumn {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+/* footer */
+.leftfooter {
+  width: 50%;
+  padding-left: 25%;
+  position: absolute;
+}
+
+.rightfooter {
+  right: 0px;
+  width: 50%;
+  position: absolute;
+}
+
+.bottomfooter {
+  align-items: center;
+  text-align:center;
+  padding-top: 100px;
+}
+
+.footerlogo {
+  position: relative;
+  display: inline-block;
+}
+
+.footerlogo .footerlogohover {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.footerlogo:hover .footerlogohover {
+  display: inline;
 }
