@@ -12,6 +12,7 @@ body {
 #baby-logo {
   margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 
 
@@ -21,6 +22,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
+}
+.baby-name-table th {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .baby-name-table tr th,tr td{
@@ -33,4 +38,31 @@ padding:10px 100px 10px 0px;
 }
 .baby-name-table tr td{
   border-bottom: 1px solid gray;
+}
+
+.facebook {
+  background-image: src("assets/images/ic-facebook-inactive-24.png") no-repeat;
+  display: inline-block;
+}
+
+.facebook:hover {
+  background-image: src("assets/images/ic-facebook-active-24.png") no-repeat;
+}
+
+.linkedin {
+  background-image: src("assets/images/ic-linkedin-inactive-24.png.png") no-repeat;
+  display: inline-block;
+}
+
+.linkedin:hover {
+  background-image: src("assets/images/ic-linkedin-active-24.png") no-repeat;
+}
+
+.twitter {
+  background-image: src("assets/images/ic-twitter-inactive-24.png") no-repeat;
+  display: inline-block;
+}
+
+.twitter:hover {
+  background-image: src("assets/images/ic-twitter-active-24.png") no-repeat;
 }
