@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: transparent;
   align-content: center;
   
 }
 #pixel-logo {
-  background-color: aqua ;
+  background-color: #66d0f0 ;
   box-align:left;
   padding: 10px;
 }
@@ -44,6 +48,18 @@ padding:10px 100px 10px 0px;
 }
 .baby-name-table tr td{
   border-bottom: 1px solid gray;
+}
+
+.leftfooter {
+  left: 0px;
+  width: 50%;
+  position: absolute;
+}
+
+.rightfooter {
+  right: 0px;
+  width: 50%;
+  position: absolute;
 }
 
 .footerlogo {
