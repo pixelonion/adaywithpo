@@ -15,7 +15,7 @@ body{
 }
 
 .babyiconpos{
-    background-color: #cceeff;
+    background-color: #6495ED;
 }
 
 /*pixel onion logo*/
@@ -23,13 +23,14 @@ body{
   text-align: left;
   padding-left:5%; /*responsive positioning*/
   padding-top:5%;
-  background-color: #cceeff;
+  background-color: #6495ED;
 }
 
 .babyicon{
   height:auto;
-  width:100%:
-  min-width:300px;
+  width:100%;
+  max-width: 300px;
+  min-width:100px;
 }
 
 /*White background for table*/
@@ -41,7 +42,7 @@ body{
 
 .cloudimg{
   width:100%;
-  background-color: #cceeff;
+  background-color: #6495ED;
   vertical-align: bottom; /*By default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on.*/
 }
 
@@ -87,7 +88,7 @@ td:nth-child(3){
 /*banner bg color*/
 /*text-align center doesnt align elements of display type block */
 .banner{
-  background-color: #cceeff;
+  background-color: #6495ED;
   text-align: center
 }
 
@@ -99,19 +100,31 @@ td:nth-child(3){
   max-width:500px;
 }
 
+.bannerText{
+  color:white;
+  font-weight:bold;
+  text-align: left;
+}
+
 /*banner image setting*/
 .floatLeft{
   float:left;
 }
 
+
+/*By default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on.*/
 .bannerBabyIcon{
   height:100px;
+  vertical-align: bottom;
+  margin-right:15px;
 }
+
 
 .fixBannerContentHeight{
   line-height: 2.0;
 }
 
+/*clear floats*/
 .clear{
   clear:both;
 }
@@ -128,9 +141,9 @@ td:nth-child(3){
 }
 
 /*width of each footer content */
-/* 15 * 2 = 30px which is the margin-right used on you can find us at information */
+/* 15 * 2 = 30px which is the margin-right used on <p>you can find us at information</p> */
 .footerWidth{
-  width:calc(50%-15px);
+  width:calc(50% - 15px);
 }
 
 .adjustRight{
