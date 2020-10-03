@@ -2,17 +2,69 @@
 <html>
 <head>
   <title>A day with Pixel Onion</title>
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div>Pixel Onion logo</div>
-    <div>Site logo</div>
+    <div id="pixelOnion-logo"><img src="assets/images/pixel-onion-logo.png"></div>
+    <div id="site-logo"><img src="assets/images/baby-name-finder-logo.png"></div>
   </header>
   <section>
-    Main content
+	<!-- Table -->
+    <div class="container" id="table-container">
+		<table>
+			<tr id="tableHeader">
+				<th>Name</th>
+				<th>Gender</th>
+				<th>ID</th>
+			</tr>
+			<tr>
+				<td>Abel</td>
+				<td>Boy</td>
+				<td>6941</td>
+			</tr>
+			<tr>
+				<td>Adira</td>
+				<td>Girl</td>
+				<td>2904</td>
+			</tr>
+		</table>
+	</div>
+	<!-- Banner Baby Section -->
+	<div class="row container" id="banner-baby">
+		<div class="column">
+			<img src="assets/images/banner-baby.jpg" id="banner-baby-img">
+		</div>
+		<div class="column">
+			<p id="text">Searching for the perfect name for your baby?
+			Whether you want something traditional or unusual.
+			We can help you!</p>
+		</div>
+	</div>
   </section>
   <footer>
-    Footer
+    <div class="row container" id="footer-content">
+		<div class="column">
+			<div id="contact-info">
+				<p id="find-us">You can find us at: </p>
+				<p>991C Alexandra Road, #01-138, Singapore 119971 <br> 
+				or you can contact us at 
+				<a href = "mailto: hello@pixelonion.com">hello@pixelonion.com</a>
+				<p>
+			</div>
+		</div>
+		<div class="column" id="social-media">
+			<p id="social-community">Join our social community</p>
+			<div id="social-media-logo">
+				<img src="assets/images/ic-facebook-inactive-24.png">
+				<img src="assets/images/ic-linkedin-inactive-24.png">
+				<img src="assets/images/ic-twitter-inactive-24.png">
+			</div>
+		</div>
+	</div>
+	<div id="copy-right">
+		<p>&copy; 2017 Pixel Onion Pte Ltd. All Rights Reserved</p>
+	</div>
   </footer>
 </body>
 </html>
