@@ -1,3 +1,104 @@
 body {
-  background: transparent;
+	background: transparent;
+	background-color: #87CEEB;
 }
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+.column{
+	float: left;
+	width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#pixelOnion-logo{
+	margin-left: 100px;
+}
+
+#site-logo img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#table-container{
+	height: 350px;
+	background-image: url("../images/cloud-banner.png");
+	background-size: cover;
+	padding-top: 250px;
+}
+
+table{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table, td {
+	text-align: center;
+	border-bottom: 1px solid grey;
+	border-collapse: collapse;
+}
+
+th{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+#banner-baby{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#banner-baby-img{
+	float: right;
+	padding-right: 50px;
+}
+
+#text{
+	width: 50%;
+	color: white;
+	font-style: bold;
+	font-size: 18pt;
+	margin: 0px;
+}
+
+#social-media{
+	padding-left: 50px;
+}
+
+#social-media-logo img{
+	padding-right: 15px;
+}
+
+#copy-right{
+	text-align: center;
+}
+
+footer{
+	background-color: white;
+}
+
+#find-us, #social-community{
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+#contact-info{
+	float: right;
+}
+
+	
