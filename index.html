@@ -2,17 +2,67 @@
 <html>
 <head>
   <title>A day with Pixel Onion</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
-    <div>Pixel Onion logo</div>
-    <div>Site logo</div>
+    <div id='pixelonionlogo'><img src="assets/images/pixel-onion-logo.png"/></div>
+    <img id='site-logo' src="assets/images/baby-name-finder-logo.png">
   </header>
   <section>
-    Main content
+    <div id='table-container'>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>ID</th>
+        </tr>
+        <tr>
+          <td>Abel</td>
+          <td>Boy</td>
+          <td>6941</td>
+        </tr>
+        <tr>
+          <td>Adira</td>
+          <td>Girl</td>
+          <td>2904</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Description of site -->
+    <div id='blue-container'>
+      <div id='banner-baby' class='column'>
+        <img src="assets/images/banner-baby.jpg"/>
+      </div>
+      <div id='text-descript' class='column'>
+        <p>
+          Searching for the perfect name for your baby? Whether you want something traditional or unusual. We can help you!
+        </p>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
   </section>
   <footer>
-    Footer
+    <div id='footer'>
+      <div id='contact' class='column'>
+        <div style='float: right;'>
+          <p style='font-size: 18; font-weight: bold;'>You can find us at:</p>
+          <p style='font-size: 10pt;'>991C Alexandra Road, #01-138, Singapore 119971</p>
+          <p style='font-size: 10pt;'>or you can email us at <a href = "mailto: hello@pixelonion.com">hello@pixelonion.com</a></p>
+        </div>
+      </div>
+      <div id='social-media' class='column'>
+        <p>Join our social community</p>
+        <img src="assets/images/ic-facebook-inactive-24.png"/>
+        <img src="assets/images/ic-linkedin-inactive-24.png"/>
+        <img src="assets/images/ic-twitter-inactive-24.png"/>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div>
+      <p style='text-align: center;' id='copy-right'>&copy; 2017 Pixel Onion Pte Ltd. All Rights Reserved</p>
+    </div>
   </footer>
 </body>
 </html>
