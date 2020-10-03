@@ -1,3 +1,96 @@
 body {
-  background: transparent;
+  background: cornflowerblue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#pixelonionlogo {
+  padding-left: 100px;
+}
+
+#site-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* #table-background {
+  background-image: url('assets/images/cloud-banner.png');
+} */
+
+#table-container {
+  padding-top: 250px;
+  background-image: url('../images/cloud-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+th {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+tr > th {
+  padding-right: 100px;
+}
+
+tr > td {
+  padding-right: 100px;
+  border-bottom: 1px solid grey;
+}
+
+tr > th:first-child {
+  padding-left: 20px;padding-right: 250px;
+}
+
+tr > td:first-child {
+  padding-left: 20px;padding-right: 250px;
+}
+
+#banner-baby {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#banner-baby > img {
+  float: right;
+  padding-right: 20px;
+}
+
+#text-descript > p {
+  font-size: 18pt;
+  width: 50%;
+  color: white;
+}
+
+#copy-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#social-media {
+  padding-left: 30px;
+}
+
+#social-media > img {
+  padding-right: 25px;
+}
+
+footer {
+  background-color: white;
 }
