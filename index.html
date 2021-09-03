@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>A day with Pixel Onion</title>
-  <script src="assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.3/jquery.csv.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
 <body>
   <header>
@@ -16,11 +17,7 @@
         <th>Gender</th>
         <th>ID</th>
       </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+    </table>
   </section>
   <footer>
     <p class="twin">
@@ -33,14 +30,8 @@
     <a href="#" target="_blank" class="icon"><img src="assets/images/ic-facebook-active-24.png"/></a>
     <a href="#" target="_blank" class="icon"><img src="assets/images/ic-linkedin-active-24.png"/></a>
     <a href="#" target="_blank" class="icon"><img src="assets/images/ic-twitter-active-24.png"/></a>
-
     <p> &#169; 2017 Pixel Onion Pte. Ltd. All Rights Reserved</p>
   </footer>
-  <!-- <script>
-    var csvtotable = new CsvToTable({
-      csvFile: 'data/data.csv'
-    });
-    csvtotable.run();
-  </script> -->
+  <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
