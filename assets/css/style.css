@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; }
+*, img { margin: 0; padding: 0; }
 
 @font-face {
   font-family: sass;
@@ -20,18 +20,23 @@ header > div {  display: flex; justify-content: left; padding: 1rem 20%; }
 header > div:nth-child(2) { display: flex; justify-content: center; }
 header > div > img { margin-top: 20px; }
 
-section > table { border-collapse: collapse; margin: 0 auto; width: 40%; }
-section > table th { border-color: #000; font-size: 1.6rem; font-family: sass; font-weight: bold; }
+section > table { margin: 0 auto; width: 40%; border-collapse: collapse; }
+section > table th { border-color: #000; font-size: 1.6rem; font-family: sass; font-weight: bold; border-top: 2px solid #000; border-bottom: 2px solid #000; }
 section > table th, section > table td { text-align: left; padding: 12px; }
 section > table td { border-bottom: 1px solid #C0C0C0; padding: 14px 12px; border-top: 0; }
 
 article, section { padding: 30px 0; }
 article { color: #fff; display: flex;  }
-article > div:first-child, footer > div:first-child { width: 40%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
-article > div:first-child > div:nth-child(2) { padding: 20px; margin: 0 auto; display: flex; font-size: 2rem; font-weight: bold; }
+article > div:first-child, footer > div:first-child { width: 40%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+article > div:first-child > div:nth-child(2) { padding: 20px; display: flex; font-size: 2rem; font-weight: bold; max-width: 60%; min-width: 60%; }
 
 article, footer { justify-content: center; }
 
-p.twin::first-line { font-weight: bold; line-height: 3; }
+p.twin { white-space: nowrap; }
+p.twin::first-line { font-weight: bold; line-height: 3;  }
 footer > div:last-child { display: flex; justify-content: center; padding: 30px 0; font-size: 0.9rem; }
-p.twin > a { padding: 8px; }
+footer img { padding: 8px; }
+
+.facebook, .twitter, .linkedin { position: relative; display: inline-block; }
+.facebook .top, .twitter .top, .linkedin .top { display: none; position: absolute; top: 0; left: 0; z-index: 99; }
+.facebook:hover .top, .twitter:hover .top, .linkedin:hover .top { display: inline; }
