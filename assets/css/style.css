@@ -15,7 +15,7 @@
 
 body { background: transparent; font-size: 18px; font-family: 'sass'; }
 header, article { background-color: #9BC9F5; }
-header { margin: 0 auto;  padding-bottom: 200px; background-image: url('../../assets/images/cloud-banner.svg'); background-repeat-y: no-repeat; background-position: bottom;}
+header { margin: 0 auto;  padding-bottom: 200px; background-image: url('../../assets/images/cloud-banner.svg'); background-repeat-y: no-repeat; background-repeat: repeat-x; background-position: bottom;}
 header > div {  display: flex; justify-content: left; padding: 1rem 20%; }
 header > div:nth-child(2) { display: flex; justify-content: center; }
 header > div > img { margin-top: 20px; }
