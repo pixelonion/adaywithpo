@@ -1,18 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>A day with Pixel Onion</title>
-</head>
-<body>
-  <header>
-    <div>Pixel Onion logo</div>
-    <div>Site logo</div>
-  </header>
-  <section>
-    Main content
-  </section>
-  <footer>
-    Footer
-  </footer>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A day with Pixel Onion</title>
+    <meta charset="UTF-8"/>
+	<!-- css style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+            <!-- pixel onion logo-->
+            <img src="assets/images/pixel-onion-logo.svg" alt="pixel onion logo"/>
+        </div>
+        <div>
+            <!-- baby name finder logo -->
+            <img src="assets/images/baby-name-finder-logo.svg" alt="baby name finder logo"/>
+        </div>
+      </header>
+      <section>
+        <table id="finder">
+          <tr>
+            <th>Name</th>
+            <th >Gender</th>
+            <th>ID</th>
+          </tr>
+          </table>
+      </section>
+      <article>
+        <div>
+          <div>
+            <img src="assets/images/banner-baby.jpg" alt="banner-banner"/>
+          </div>
+          <div>
+            Searching for the perfect name  for your baby? Whether you  want something traditional or unusual. We can help you!
+          </div>
+        </div>
+      </article>
+      <footer>
+        <div>
+          <p class="twin">
+            You can find us at:<br/>
+            991C Alexandra Road, #01-138, Singapore 119971<br/>
+            or you can email us at <a href="#"> hello@pixelonion.com</a>
+          </p>
+          <div>
+            <p class="twin">Join our social community</p>
+            <div class="facebook">
+              <a href="#" target="_blank" class="icon"><img src="assets/images/ic-facebook-inactive-24.svg" alt="inactive facebook"/></a>
+              <a href="#" target="_blank" class="icon top"><img src="assets/images/ic-facebook-active-24.svg" alt="active facebook"/></a>
+            </div>
+            <div class="linkedin">
+              <a href="#" target="_blank" class="icon"><img src="assets/images/ic-linkedin-inactive-24.svg" alt="inactive linkedin"/></a>
+              <a href="#" target="_blank" class="icon top"><img src="assets/images/ic-linkedin-active-24.svg" alt="active linkedin"/></a>
+            </div>
+            <div class="twitter">
+              <a href="#" target="_blank" class="icon"><img src="assets/images/ic-twitter-inactive-24.svg" alt="inctive twitter"/></a>
+              <a href="#" target="_blank" class="icon top"><img src="assets/images/ic-twitter-active-24.svg" alt="active twitter"/></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p> &#169; 2017 Pixel Onion Pte. Ltd. All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
+	<!-- js lib -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.3/jquery.csv.min.js"></script>
+  <!-- script js tbl file -->
+	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<!-- script js file -->
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
