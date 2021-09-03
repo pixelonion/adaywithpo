@@ -1,3 +1,26 @@
-body {
-  background: transparent;
+* { margin: 0; padding: 0; }
+
+@font-face {
+  font-family: sass;
+  src: url("../fonts/sassoon-primary-std-592ff03941b89.otf");
+  font-weight: normal;
+  font-style: normal;
 }
+@font-face {
+  font-family: sass;
+  src: url("../fonts/sassoon-primary-std-bold-592ff06b66131.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body { background: transparent; width: 100%; font-size: 24px; font-family: sass; }
+
+header { margin: 0 auto; background-color: #9BC9F5; padding-bottom: 200px; background-image: url('../../assets/images/cloud-banner.svg'); background-repeat-y: no-repeat; background-position: bottom;}
+header > div {  display: flex; justify-content: left; padding: 1rem 20%; }
+header > div:nth-child(2) { display: flex; justify-content: center; }
+
+section > table { border-collapse: collapse; width: 40%; margin: 0 auto; }
+section > table th { border-top: 3px solid #000; border-bottom: 3px solid #000; color: #000; font-size: 1.6rem; font-family: sass; font-weight: bold;; }
+section > table th, section > table td { text-align: left; padding: 10px; }
+section > table td { border-bottom: 1px solid #C0C0C0; padding: 12px 10px; }
+
