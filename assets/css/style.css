@@ -13,14 +13,25 @@
   font-style: normal;
 }
 
-body { background: transparent; width: 100%; font-size: 24px; font-family: sass; }
-
-header { margin: 0 auto; background-color: #9BC9F5; padding-bottom: 200px; background-image: url('../../assets/images/cloud-banner.svg'); background-repeat-y: no-repeat; background-position: bottom;}
+body { background: transparent; font-size: 18px; font-family: 'sass'; }
+header, article { background-color: #9BC9F5; }
+header { margin: 0 auto;  padding-bottom: 200px; background-image: url('../../assets/images/cloud-banner.svg'); background-repeat-y: no-repeat; background-position: bottom;}
 header > div {  display: flex; justify-content: left; padding: 1rem 20%; }
 header > div:nth-child(2) { display: flex; justify-content: center; }
+header > div > img { margin-top: 20px; }
 
-section > table { border-collapse: collapse; width: 40%; margin: 0 auto; }
-section > table th { border-top: 3px solid #000; border-bottom: 3px solid #000; color: #000; font-size: 1.6rem; font-family: sass; font-weight: bold;; }
-section > table th, section > table td { text-align: left; padding: 10px; }
-section > table td { border-bottom: 1px solid #C0C0C0; padding: 12px 10px; }
+section > table { border-collapse: collapse; margin: 0 auto; width: 40%; }
+section > table th { border-color: #000; font-size: 1.6rem; font-family: sass; font-weight: bold; }
+section > table th, section > table td { text-align: left; padding: 12px; }
+section > table td { border-bottom: 1px solid #C0C0C0; padding: 14px 12px; border-top: 0; }
 
+article, section { padding: 30px 0; }
+article { color: #fff; display: flex;  }
+article > div:first-child, footer > div:first-child { width: 40%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+article > div:first-child > div:nth-child(2) { padding: 20px; margin: 0 auto; display: flex; font-size: 2rem; font-weight: bold; }
+
+article, footer { justify-content: center; }
+
+p.twin::first-line { font-weight: bold; line-height: 3; }
+footer > div:last-child { display: flex; justify-content: center; padding: 30px 0; font-size: 0.9rem; }
+p.twin > a { padding: 8px; }
