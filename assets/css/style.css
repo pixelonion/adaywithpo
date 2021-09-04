@@ -26,21 +26,18 @@ footer {
   justify-content: center;
   background-color: white;
 }
-p {
-  color: white;
-  font-family: SassoonPrimaryBold;
-  font-size: 24px;
 
-}
 h1 {
   color: grey;
   font-family: SassoonPrimaryStd;
-  font-size: 20px;
+  font-size: 2.4vw;
+  font-weight: normal;
 }
 h2{
   color: grey;
   font-family: SassoonPrimaryStd;
-  font-size: 15px;
+  font-size: 1.5vw;
+  font-weight: normal;
 
 }
 table, th, td {
@@ -92,14 +89,30 @@ table, th, td {
   background-color: white;
   width: 60%;
 }
+.banner-section{
+display: flex;
+justify-content: center;
+
+}
 .banner{
+  width: 60%;
   display: flex;
   justify-content: center;
 
 }
+.banner img{
+  margin-bottom: 3%;
+  width: 40%;
+  height: auto;
+}
 .banner-text{
   margin-left: 3%;
-  width: 40%;
+  width: 60%;
+}
+.banner-text p {
+  color: white;
+  font-family: SassoonPrimaryBold;
+  font-size: 2vw;
 }
 .footer-top {
   padding-top: 2%;
