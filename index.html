@@ -3,6 +3,8 @@
 <head>
   <title>A day with Pixel Onion</title>
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <div class = "center">
@@ -18,14 +20,8 @@
 
     </section>
     <section class = "table">
-      <div class = "table-box">
-        <table>
-          <tr>
-            <td>Name</td>
-            <td>Gender</td>
-            <td>ID</td>
-          </tr>
-        </table>
+      <div id="baby-table" class = "table-box">
+
       </div>
     </section>
     <section class = "banner">
@@ -58,5 +54,38 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    // On page load
+    $(document).ready(function (){
+      <!-- Perform an AJAX async request to retrieve data.csv and populate table -->
+      $.ajax({
+        url: 'data/data.csv',
+        dataType: 'text',
+        success: function (data){
+          // Split data by new line
+          const dataLine = data.split('\n');
+          // Define table headers
+          var table = '<table><tr><td>Name</td><td>Gender</td><td>ID</td></tr>';
+
+          // Loop dataLine array to retrieve a csv row
+          for (let i = 0; i < dataLine.length; i++) {
+            var cellData = dataLine[i].split(',');
+            table += '<tr>';
+
+            // Loop the cellData array to retrieve the cell data
+            for (let j = 0; j < cellData.length; j++) {
+              table += '<td>' + cellData[j] + '</td>';
+            }
+            table += '</tr>';
+          }
+          table += '</table>';
+
+          // post back the html table to the web page
+          $('#baby-table').html(table);
+        }
+      });
+    });
+  </script>
 </body>
 </html>
