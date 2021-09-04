@@ -2,17 +2,104 @@
 <html>
 <head>
   <title>A day with Pixel Onion</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-  <header>
-    <div>Pixel Onion logo</div>
-    <div>Site logo</div>
-  </header>
-  <section>
-    Main content
-  </section>
-  <footer>
-    Footer
-  </footer>
+  <div class = "center">
+    <div class = "websitelogo">
+      <img src="assets/images/pixel-onion-logo.png" alt="Pixel Onion Logo">
+    </div>
+    <header class = "masthead">
+      <img src="assets/images/baby-name-finder-logo.png" alt="Baby Name Finder">
+    </header>
+    <section class = "cloud">
+
+        <img src="assets/images/cloud-banner.png" >
+
+    </section>
+    <section class = "table">
+      <div id="baby-table" class = "table__box">
+
+        <colgroup>
+          <col span="2" style="background-color:red">
+          <col style="background-color:yellow">
+        </colgroup>
+      </div>
+    </section>
+    <section class = "banner">
+
+      <div class = "banner__box">
+          <img src="assets/images/banner-baby.jpg" >
+
+        <div class = "banner__text">
+            <p>
+              Searching for the perfect name for your baby? Whether you want something traditional or unusual. We can help you!
+            </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer__left">
+          <h1>
+            You can find us at:
+          </h1>
+          <h2>
+            991 Alexandar Road, #01-13B, Singapore 119971 or you can email us at
+            <a href="mailto: hello@pixelonion.com">hello@pixelonion.com</a>
+          </h2>
+        </div>
+        <div class="footer__right">
+          <h1>
+            Join our social community:
+          </h1>
+          <div class="footer__socials">
+            <a href="https://www.facebook.com/pixelonion"><img src="assets/images/ic-facebook-inactive-24.png"></a>
+            <a href="https://sg.linkedin.com/company/pixel-onion-pte-ltd"><img src="assets/images/ic-linkedin-inactive-24.png"></a>
+            <a href="https://twitter.com/pixelonion?lang=en"><img src="assets/images/ic-twitter-inactive-24.png"></a>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>2017 Pixel Onion Pte Ltd. All Rights Reserved</p>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // On page load
+    $(document).ready(function (){
+      <!-- Perform an AJAX async request to retrieve data.csv and populate table -->
+      $.ajax({
+        url: 'data/data.csv',
+        dataType: 'text',
+        success: function (data){
+          // Split data by new line
+          const dataLine = data.split('\n');
+          // Define table headers
+          var table = '<table><colgroup><col span="1" class="first"><col span="1" class="second"><col span="1" class="third"></colgroup><tr><th>Name</th><th>Gender</th><th>ID</td></tr>';
+
+          // Loop dataLine array to retrieve a csv row
+          for (let i = 0; i < dataLine.length; i++) {
+            var cellData = dataLine[i].split(',');
+            table += '<tr>';
+
+            // Loop the cellData array to retrieve the cell data
+            for (let j = 0; j < cellData.length; j++) {
+              table += '<td>' + cellData[j] + '</td>';
+            }
+            table += '</tr>';
+          }
+          table += '</table>';
+
+          // post back the html table to the web page
+          $('#baby-table').html(table);
+        }
+      });
+    });
+  </script>
 </body>
 </html>
