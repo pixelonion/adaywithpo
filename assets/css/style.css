@@ -19,6 +19,7 @@ body {
   background: transparent;
   background-color: #a0ccf4;
   font-family: pixelOnionFont;
+  color: #8c8c8c;
 }
 
 
@@ -51,9 +52,43 @@ body {
   margin-left: -10px;
   margin-right: -10px;
   margin-top: -15px;
+  padding-bottom: 2%;
   background-color: white;
   display: block;
   justify-content: center;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  overflow-y:scroll;
+  max-height: 450px;
+}
+
+table th {
+  text-align: left;
+}
+
+table td:first-child{
+  width:100%;
+  min-width: 250px;
+}
+
+table td:nth-child(2), td:last-child{
+  width:100%;
+  min-width: 100px;
+  padding: 0.5rem;
+}
+
+table td{
+  border-bottom: 0.5px solid #8c8c8c;
+}
+
+table tr:nth-child(1) {  
+  border-top: 2px solid #8c8c8c;
+  border-bottom: 2px solid #8c8c8c;
+  font-weight: bold;
+  font-size: large;
 }
 
 .display {
@@ -61,7 +96,7 @@ body {
   justify-content: center;
 }
 
-/* Article */
+/* Baby face container */
 
 #baby_face_container{
   display: flex;
@@ -84,25 +119,6 @@ body {
   font-family: pixelOnionFontBold;
   font-size: x-large;
 }
-
-/* #baby_face {
-  padding-top: 2%;
-  background-color: #a0ccf4;
-  color: antiquewhite;
-  display: flex;
-  justify-content: left;
-  margin-left: 25%;
-  margin-right: auto;
-}
-
-#baby_face_message {
-  border: 1px black; 
-  display: flex;
-  justify-content: left;
-  color: white;  
-  font-family: pixelOnionFontBold;
-  font-size: x-large;
-} */
 
 /* Footer */
 footer {
