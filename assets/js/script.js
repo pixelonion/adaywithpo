@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    //alert("I am here.");
     var data;
 	$.ajax({
 	  type: "GET",  
@@ -20,7 +19,7 @@ function generateHtmlTable(data) {
         return null;
       } else {
 		$.each(data, function( index, row ) {
-		  //bind header
+			//For each data row, append based on values
 			html += '<tr>';
 			$.each(row, function( index, colData ) {
 				html += '<td>';
@@ -31,32 +30,6 @@ function generateHtmlTable(data) {
 		});
 		html += '</tbody>';
 		html += '</table>';
-		//alert(html);
 		$('#table_display').append(html);
 	  }
-	}
-
-
-/**
- * //bind header
-		  if(index == 0) {
-			html += '<thead>';
-			html += '<tr>';
-			$.each(row, function( index, colData ) {
-				html += '<th>';
-				html += colData;
-				html += '</th>';
-			});
-			html += '</tr>';
-			html += '</thead>';
-			html += '<tbody>';
-		  } else {
-			html += '<tr>';
-			$.each(row, function( index, colData ) {
-				html += '<td>';
-				html += colData;
-				html += '</td>';
-			});
-			html += '</tr>';
-		  }
- */
+}
