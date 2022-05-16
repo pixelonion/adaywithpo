@@ -2,17 +2,53 @@
 <html>
 <head>
   <title>A day with Pixel Onion</title>
+  <link rel="stylesheet" href="assets/css/style.css">  
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
 </head>
 <body>
   <header>
-    <div>Pixel Onion logo</div>
-    <div>Site logo</div>
+    <!--Insert images here-->
+    <div class="pixel_logo">
+      <img src="assets/images/pixel-onion-logo.png" alt="pixel_onion_logo"/>
+    </div>
+    <div class="site_logo">
+      <img src="assets/images/baby-name-finder-logo.png" alt="pixel_onion_logo"/>
+    </div>
   </header>
   <section>
-    Main content
+    <div class="cloud_banner"></div>
+    <div class="table_display"><!--Insert csv file values here and populate into table using JS--></div>
+    <!--Baby footer here-->
+    <div class="baby_face_container">
+      <div class="baby_face">
+        <img src="assets/images/banner-baby.jpg" alt="baby_banner"/>
+      </div>
+      <div class="baby_face_message">
+        Searching for the perfect name for your baby? 
+        Whether you want something traditional or unusual, We can help you!
+      </div>
+    </div>    
   </section>
   <footer>
-    Footer
+    <!--Footer here-->
+    <div class="footer_container">
+      <div class="left_footer">
+        <h2>You can find us at:</h2>
+        991C Alexandra Road, #01-13B, Singapore 119971 <br/>
+        or you can email us at <a href="mailto: hello@pixelonion.com">hello@pixelonion.com</a>
+      </div>
+      <div class="right_footer">
+        <h2>Join our social community</h2>
+        <a class="icon icon-facebook" href="https://www.facebook.com/pixelonion"></a>
+        <a class="icon icon-linkedin" href="https://twitter.com/pixelonion"></a>
+        <a class="icon icon-twitter" href="https://www.linkedin.com/company/pixelonion/"></a>
+      </div>
+    </div>
+    <div class="final_footer">
+      &copy; 2017 Pixel Onion Pte Ltd. All Rights Reserved
+    </div>
   </footer>
+  <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
