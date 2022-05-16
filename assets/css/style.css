@@ -24,7 +24,7 @@ body {
 
 
 /* Header */
-#pixel_logo {
+.pixel_logo {
   margin-left: auto;
   margin-right: auto;
   padding-top: 0.5%;
@@ -32,14 +32,14 @@ body {
   width:80%;
 }
 
-#site_logo {
+.site_logo {
   display: flex; 
   justify-content: center; 
   padding: 1rem 20%; 
 }
 
 /* Section */
-#cloud_banner { 
+.cloud_banner { 
   margin-left: -10px;
   margin-right: -10px;
   padding-bottom: 200px; 
@@ -48,7 +48,7 @@ body {
   background-position: bottom;
 }
 
-#table_display {
+.table_display {
   margin-left: -10px;
   margin-right: -10px;
   margin-top: -15px;
@@ -98,7 +98,7 @@ table tr:nth-child(1) {
 
 /* Baby face container */
 
-#baby_face_container{
+.baby_face_container{
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -106,12 +106,12 @@ table tr:nth-child(1) {
   padding-bottom: 2%;
 }
 
-#baby_face {
+.baby_face {
   background-color: #a0ccf4;
   color: antiquewhite;
 }
 
-#baby_face_message {
+.baby_face_message {
   border: 1px black;
   max-width: 30%;
   color: white;  
@@ -128,22 +128,22 @@ footer {
   margin-bottom: -15px;
 }
 
-#footer_container{
+.footer_container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   /* width: 40%; */
 }
 
-#left_footer {
+.left_footer {
   padding: 2%; 
 }
 
-#right_footer {
+.right_footer {
   padding: 2%; ;
 }
 
-#final_footer {  
+.final_footer {  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

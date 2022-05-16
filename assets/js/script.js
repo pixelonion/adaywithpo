@@ -30,6 +30,6 @@ function generateHtmlTable(data) {
 		});
 		html += '</tbody>';
 		html += '</table>';
-		$('#table_display').append(html);
+		$('.table_display').append(html);
 	  }
 }
