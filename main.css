@@ -1,0 +1,8 @@
+div.main {
+    padding: 0;
+    border: 0;
+    margin: auto;
+    width: 80vmax;
+    max-width: 95vw;
+    position: relative;
+}
