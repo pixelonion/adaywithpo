@@ -1,8 +1,17 @@
-div.main {
-    padding: 0;
+body {
+    background: #9ac9f5;
+    margin: 0;
     border: 0;
-    margin: auto;
-    width: 80vmax;
-    max-width: 95vw;
+    padding: 0;
+}
+div.main {
+    padding: inherit;
+    border: inherit;
+    margin: inherit;
     position: relative;
+}
+div.main > * {
+    width: 60vmax;
+    max-width: 95vw;
+    margin: auto;
 }
