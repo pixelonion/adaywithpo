@@ -1,3 +1,19 @@
+@font-face {
+    font-family: sassoon;
+    src: url(/assets/fonts/sassoon-primary-std-592ff03941b89.otf);
+}
+
+@font-face {
+    font-family: sassoon-bold;
+    src: url(/assets/fonts/sassoon-primary-std-bold-592ff06b66131.otf);
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
 div.main {
     padding: 0;
     border: 0;
@@ -5,4 +21,61 @@ div.main {
     width: 80vmax;
     max-width: 95vw;
     position: relative;
+    font-family: sassoon;
+    color: #616161;
 }
+
+/* Pitch Section */
+.pitch {
+    background-color: #9ac9f5;
+    position: relative;
+    margin: 0 -9999rem;
+    padding: .25rem 9999rem;
+}
+
+.flex-container {
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-item-left {
+    padding: 10px;
+    align-self: center;
+    flex: 30%;
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 70%;
+}
+
+.pitch p {
+    color: white;
+    font-family: sassoon-bold;
+}
+
+/* End of Pitch Section */
+/* Footer Section */
+
+.flex-item-50 {
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-50 p a {
+    color: #8e24aa;
+}
+
+.social-icons {
+    margin: 5px;
+    text-decoration: none;
+}
+
+.all-rights-reserved {
+    margin:auto;
+    text-align: center;
+}
+/* End of Footer Section */
