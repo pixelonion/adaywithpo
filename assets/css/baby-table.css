@@ -1,0 +1,12 @@
+section.baby-name-table table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+section.baby-name-table thead {
+    /* border-color: black; */
+    border-style: solid;
+    border-width: 2px 0 2px 0;
+}
+section.baby-name-table td:first-child {
+    width: 50%;
+}
