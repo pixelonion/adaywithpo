@@ -1,18 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>A day with Pixel Onion</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script src="/assets/js/script.js"></script>
+  <link rel="stylesheet" href="assets/css/top.css">
+  <link rel="stylesheet" href="assets/css/baby-table.css">
 </head>
+
 <body>
-  <header>
-    <div>Pixel Onion logo</div>
-    <div>Site logo</div>
-  </header>
-  <section>
-    Main content
-  </section>
-  <footer>
-    Footer
-  </footer>
+  <div class="main">
+    <header class="top">
+      <div class="logo_left">
+        <img src="assets/images/pixel-onion-logo.png">
+      </div>
+      <div class="banner">
+        <img src="assets/images/baby-name-finder-logo.png">
+      </div>
+    </header>
+    <section class="spacer top"></section>
+    <section class="baby-name-table top">
+      <table>
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Gender</td>
+            <td>ID</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Abel</td>
+            <td>Boy</td>
+            <td>6941</td>
+          </tr>
+          <tr>
+            <td>Adira</td>
+            <td>Girl</td>
+            <td>2904</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- PITCH Section -->
+    <section class="pitch">
+      <div class="flex-container">
+        <!-- Container Left -->
+        <div class="flex-item-left">
+          <img class="" src="/assets/images/banner-baby.jpg" alt="Banner Baby">
+        </div>
+        <!-- Container Right -->
+        <div class="flex-item-right">
+          <p class="">
+            Searching for the perfect name for your baby? Whether you want something traditional or unusual.
+            We can help you!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER Section -->
+    <footer class="footer">
+      <div class="flex-container">
+        <!-- FOOTER Left -->
+        <div class="flex-item-50">
+          <p>You can find us at:</p>
+          <p>991C Alexandra Road, #01-13B, Singapore 119971
+            or you can email us at
+            <a href="#">hello@pixelonion.com</a>
+          </p>
+        </div>
+        <!-- FOOTER Right -->
+        <div class="flex-item-50">
+          <p>Join our social community</p>
+          <div>
+            <a href="#" class="social-icons">
+              <img src="/assets/images/ic-facebook-inactive-24.svg" alt="Facebook_Icon">
+            </a>
+            <a href="#" class="social-icons">
+              <img src="/assets/images/ic-linkedin-inactive-24.svg" alt="LinkedIn_Icon">
+            </a>
+            <a href="#" class="social-icons">
+              <img src="/assets/images/ic-twitter-inactive-24.svg" alt="Twitter_Icon">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="all-rights-reserved">
+        <p>&copy;
+          <span id="year"></span>
+          Pixel Onion Pte Ltd. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>

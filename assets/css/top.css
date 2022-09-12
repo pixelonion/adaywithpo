@@ -1,0 +1,25 @@
+header.top {
+    padding-top: 1%;
+}
+header.top > .logo_left {
+    width: 80vmax;
+}
+header img {
+    max-width: 100%;
+}
+header > .logo_left img {
+    width: 15vmax;
+}
+header > .banner img {
+    margin: auto;
+    display: block;
+    width: 25vmax;
+}
+.spacer.top {
+    background: url(../images/cloud-banner.png) repeat-x bottom;
+    background-size: cover;
+    height: 15vw;
+}
+header.top, .spacer.top {
+    background-color: #9ac9f5;
+}
