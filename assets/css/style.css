@@ -1,3 +1,58 @@
+@font-face {
+  font-family: SassoonPrimary;
+  src: url('../fonts/sassoon-primary-std-592ff03941b89.otf') format("opentype");
+  font-weight: normal;
+}
+
+
 body {
-  background: transparent;
+  background: rgb(235, 235, 235);
+  margin:0px 7% 50px 7%;
+  font-family: SassoonPrimary, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  background-color: rgb(149, 196, 240);
+}
+
+.pixel-onion-logo {
+  display: flex;
+  padding-top: 1%;
+  padding-left: 8%;
+}
+
+.pixel-onion-logo > img {
+  width: 15%;
+}
+
+.baby-name-finder-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.baby-name-finder-logo > img {
+  width: 25%;
+}
+
+.cloud-banner > img {
+  width: 100%;
+  display: flex;
+}
+
+section {
+  background-color:white;
+  display:flex;
+  justify-content:center;
+}
+
+table {
+  color:rgb(104, 104, 104);
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.table-header {
+  border-top: 2px solid rgb(104, 104, 104);
+  border-bottom: 2px solid rgb(104, 104, 104);
+  text-align: left;
 }
