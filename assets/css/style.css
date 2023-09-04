@@ -43,6 +43,7 @@ section {
   background-color:white;
   display:flex;
   justify-content:center;
+  padding-bottom: 50px;
 }
 
 table {
@@ -73,5 +74,5 @@ td {
 }
 
 tr:not(:first-child) {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgray;
 }
