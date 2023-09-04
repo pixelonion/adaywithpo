@@ -76,3 +76,52 @@ td {
 tr:not(:first-child) {
   border-bottom: 1px solid lightgray;
 }
+
+
+.babyfooter {
+
+  background-color: rgb(149, 196, 240);
+  color: white;
+  padding: 20px;
+}
+
+.footer-content {
+  justify-content: space-between; /* Add space between image and text */
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center vertically within the footer */
+}
+
+.column {
+  box-sizing: border-box;
+  
+  float: left;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  box-sizing: border-box;
+
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftalign {
+  text-align: left;
+}
+
+.columnwidth{
+  width: 55%;
+}
+
+.floatleft{
+  float: right;
+}
+
+.centeralign{
+  text-align: center;
+}
