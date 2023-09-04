@@ -82,11 +82,10 @@ tr:not(:first-child) {
 
   background-color: rgb(149, 196, 240);
   color: white;
-  padding: 20px;
+  
 }
 
 .footer-content {
-  justify-content: space-between; /* Add space between image and text */
   margin-left: auto;
   margin-right: auto;
   width: 50%; 
@@ -124,4 +123,15 @@ tr:not(:first-child) {
 
 .centeralign{
   text-align: center;
+}
+
+.socialfooter{
+  color: rgb(104, 104, 104);;
+  background-color: white;
+  padding: 5px;
+}
+
+.footerimg {
+  height: 15px; 
+  padding-right: 10px;
 }
