@@ -131,7 +131,15 @@ tr:not(:first-child) {
   padding: 5px;
 }
 
-.footerimg {
+.footericon {
   height: 15px; 
   padding-right: 10px;
+}
+
+.footerimg{
+  height: 110px ;
+}
+
+.babytext{
+  padding-left: 20px;
 }
