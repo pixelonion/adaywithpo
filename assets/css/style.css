@@ -1,3 +1,145 @@
+@font-face {
+  font-family: SassoonPrimary;
+  src: url('../fonts/sassoon-primary-std-592ff03941b89.otf') format("opentype");
+  font-weight: normal;
+}
+
+
 body {
-  background: transparent;
+  background-color: rgb(235, 235, 235);
+  margin:0 7% 3% 7%;
+  font-family: SassoonPrimary, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  background-color: rgb(149, 196, 240);
+}
+
+.pixel-onion-logo {
+  display: flex;
+  padding-top: 1%;
+  padding-left: 8%;
+}
+
+.pixel-onion-logo > img {
+  width: 15%;
+}
+
+.baby-name-finder-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.baby-name-finder-logo > img {
+  width: 25%;
+}
+
+.cloud-banner > img {
+  width: 100%;
+  display: flex;
+}
+
+section {
+  background-color:white;
+  display:flex;
+  justify-content:center;
+  padding-bottom: 50px;
+}
+
+table {
+  color:rgb(104, 104, 104);
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.table-header {
+  border-top: 2px solid rgb(104, 104, 104);
+  border-bottom: 2px solid rgb(104, 104, 104);
+  text-align: left;
+}
+
+tr > th:first-child, tr > td:first-child {
+  width:50%;
+}
+
+th {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-size: x-large;
+}
+
+td {
+  padding: 10px;
+}
+
+tr:not(:first-child) {
+  border-bottom: 1px solid lightgray;
+}
+
+
+.babyfooter {
+
+  background-color: rgb(149, 196, 240);
+  color: white;
+  
+}
+
+.footer-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center vertically within the footer */
+}
+
+.column {
+  box-sizing: border-box;
+  
+  float: left;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  box-sizing: border-box;
+
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftalign {
+  text-align: left;
+}
+
+.columnwidth{
+  width: 55%;
+}
+
+.floatleft{
+  float: right;
+}
+
+.centeralign{
+  text-align: center;
+}
+
+.socialfooter{
+  color: rgb(104, 104, 104);;
+  background-color: white;
+  padding: 5px;
+}
+
+.footericon {
+  height: 15px; 
+  padding-right: 10px;
+}
+
+.footerimg{
+  height: 110px ;
+}
+
+.babytext{
+  padding-left: 20px;
 }
